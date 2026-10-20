@@ -2,7 +2,7 @@
 
 
 console.log("Hello, World!");
-console.log(2+2);
+console.log(2-2);
 
 console.log(typeof "Hello, World"); //string
 console.log(typeof 17); //number
@@ -114,6 +114,30 @@ else{ //só funciona quando o if é falso
 // senão, se a idade da pessoa for maior ou igual a 16
 //senão for nenhuma das alternastivas anteriores
 
+let idade_dirigir = 19;
+let tem_cnh = true;
+let tem_carro = false;
+ if (idade_dirigir >= 18 && tem_cnh == true && tem_carro == true){
+    console.log("Você pode dirigir!")
+ }else {
+    console.log("Você não pode dirigir.")
+ }
+
+//  ------------------------
+
+let eh_professor = false
+let eh_aluno = false
+
+if (eh_professor == true || eh_aluno == true){
+    console.log("Você tem direito a meia-entrada!")
+}else{
+    console.log ("Você não tem direito a meia-entrada.")
+}
+
+// && = "e"
+// || = "ou"
+
+
 // EXERCICIOS
 
 // 1
@@ -190,7 +214,64 @@ if (dia_semana == 1){
 }else if (dia_semana == 6){
     console.log ("Sexta-feira")
 }else if (dia_semana == 7){
-    console.log (Sábado)
+    console.log ("Sábado")
 }else{
     console.log ("Dia inválido")
+}
+
+// EXERCICIOS 2
+
+// 1
+
+let num_int = 13
+
+if (num_int >10 && num_int <50 ){
+    console.log("Está no intervalo!")
+}else{
+    console.log("Não está no intervalo.")
+}
+
+// 2
+
+let idade_est = 17
+
+if (idade_est >16 && idade_est <24 ){
+    console.log("Parábens! Você foi selecionado para o estágio!.")
+}else{
+    console.log("Infelizmente você não foi selecionado para nosso estágio.")
+}
+
+// 3
+
+let assinante = false
+let valor_compra = 200
+
+if (assinante == true || valor_compra >= 200){
+    console.log("Aproveite seu frete grátis!")
+}else{
+    console.log("Você não tem direito a frete grátis.")
+}
+
+// 4
+
+let dia_sem = "Domingo"
+
+if (dia_sem == "Sábado" || dia_sem == "Domingo"){
+    console.log("Dia útil")
+}else{
+    console.log("Não é dia útil")
+}
+
+// 5
+
+let cupom = true
+let assinante2 = true
+let valor_compra2 = 255
+let divisor = 100/15
+let resultado = valor_compra2 - valor_compra2 / divisor
+
+if ( cupom == true || assinante2 == true || valor_compra2 >= 150){
+    console.log("Uhuul! Você ganhou 15% de desconto! O total do seu desconto é: R$" + valor_compra2/divisor + ". O valor total da compra fica em: R$" + resultado)
+}else{
+    console.log("Seja assinante, tenha um cupom ou realize uma compra de 150 reais ou mais para receber 15% de desconto.")
 }
